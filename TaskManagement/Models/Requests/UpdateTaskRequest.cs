@@ -1,6 +1,6 @@
-﻿namespace TaskManagement.Models.Responses;
+﻿namespace TaskManagement.Models.Requests;
 
-public class TaskRequest
+public class UpdateTaskRequest
 {
     public string Name { get; set; }
     public string Description { get; set; }

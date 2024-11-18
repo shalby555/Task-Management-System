@@ -8,7 +8,7 @@ namespace TaskManagement.Controllers;
 [ApiController]
 public class UsersController : ControllerBase
 {
-    //GET "api/users"
+    //POST "api/users/register"
     [HttpPost]
     public ActionResult<Guid> Register([FromBody] RegisterUserRequest request)
     {
@@ -16,14 +16,14 @@ public class UsersController : ControllerBase
         return Ok(addedUserId);
     }
 
-    // "api/users/login"
+    //POST "api/users/login"
     [HttpPost("login")]
     public IActionResult Login([FromBody] LoginRequest request)
     {
         return Ok();
     }
 
-    // "api/users"
+    //GET "api/users"
     [HttpGet]
     public ActionResult<List<UserResponse>> GetUsers()
     {
@@ -31,21 +31,21 @@ public class UsersController : ControllerBase
         return Ok(users);
     }
 
-    // "api/:id"
+    //PUT "api/:id"
     [HttpPut("{id}")]
     public IActionResult UpdateUser([FromRoute] Guid id, [FromBody] UpdateUserRequest request)
     {
         return NoContent();
     }
 
-    // "api/:id"
+    //DELETE "api/:id"
     [HttpDelete("{id}")]
     public IActionResult DeleteUser([FromRoute] Guid id)
     {
         return NoContent();
     }
 
-    // "api/:id/deactivate"
+    //PATCH "api/:id/deactivate"
     [HttpPatch("{id}/deactivate")]
     public IActionResult DeactivateUser([FromRoute] Guid id)
     {
