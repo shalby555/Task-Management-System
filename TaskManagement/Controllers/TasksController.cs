@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using TaskManagement.Models.Requests;
 using TaskManagement.Models.Responses;
 
@@ -43,6 +42,13 @@ public class TasksController : ControllerBase
     //PATCH "api/:id/status"
     [HttpPatch("{id}/status")]
     public IActionResult StatusTask([FromRoute] Guid id)
+    {
+        return NoContent();
+    }
+
+    //DELETE "api/:id"
+    [HttpDelete("{id}")]
+    public IActionResult DeleteTask([FromRoute] Guid id)
     {
         return NoContent();
     }
