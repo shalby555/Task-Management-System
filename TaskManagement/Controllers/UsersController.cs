@@ -8,7 +8,7 @@ namespace TaskManagement.Controllers;
 [ApiController]
 public class UsersController : ControllerBase
 {
-    // "api/users"
+    //GET "api/users"
     [HttpPost]
     public ActionResult<Guid> Register([FromBody] RegisterUserRequest request)
     {
