@@ -1,9 +1,7 @@
 ﻿{
   "$schema": "http://json.schemastore.org/launchsettings.json",
-
   "profiles": {
-   
-  "https": {
+   "https": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
@@ -12,6 +10,6 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
-     } 
+    } 
   }
 }
