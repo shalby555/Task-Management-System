@@ -9,6 +9,6 @@ public class RegisterUserRequestValidator : AbstractValidator<RegisterUserReques
         RuleFor(model => model.FirstName).MaximumLength(20).MinimumLength(2);
         RuleFor(model => model.LastName).MaximumLength(20).MinimumLength(2);
         RuleFor(model => model.Email).EmailAddress();
-        RuleFor(model => model.Password).NotEmpty().MinimumLength(6);
+        RuleFor(model => model.Password).NotEmpty().MinimumLength(6).MaximumLength(20);
     }
 }
