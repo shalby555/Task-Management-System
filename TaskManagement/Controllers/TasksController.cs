@@ -4,7 +4,7 @@ using TaskManagement.Models.Responses;
 
 namespace TaskManagement.Controllers;
 
-[Route("api/task")]
+[Route("api/tasks")]
 [ApiController]
 public class TasksController : ControllerBase
 {
@@ -16,15 +16,7 @@ public class TasksController : ControllerBase
         return Ok(addedTaskId);
     }
 
-    //GET "api/tasks"
-    [HttpGet]
-    public ActionResult<List<UserResponse>> GetUsers()
-    {
-        List<UserResponse> users = new List<UserResponse>();
-        return Ok(users);
-    }
-
-    //GET "api/tasks"
+     //GET "api/tasks"
     [HttpGet]
     public ActionResult<List<TaskResponse>> GetTasks()
     {

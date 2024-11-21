@@ -8,6 +8,8 @@ namespace TaskManagement.Models.Requests.Validators
         {
             RuleFor(model => model.Name).MaximumLength(20).MinimumLength(2);
             RuleFor(model => model.Description).MaximumLength(150).MinimumLength(20);
+            RuleFor(model => model.CreatorId).NotEmpty();
+
         }
     }
 }
