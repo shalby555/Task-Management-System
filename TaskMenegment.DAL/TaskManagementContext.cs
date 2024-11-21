@@ -5,7 +5,7 @@ namespace TaskMenagment.DAL;
 
 public class TaskManagementContext:DbContext
 {
-    public DbSet<Users> Users { get; set; }
+    public DbSet<UsersDto> Users { get; set; }
 
     public DbSet<Task> Task { get; set; }
 

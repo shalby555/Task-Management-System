@@ -1,6 +1,6 @@
 ﻿namespace TaskManegment.Core.Dtos
 {
-    public class Users
+    public class UsersDto
     {
         public Guid Id { get; set; }
 

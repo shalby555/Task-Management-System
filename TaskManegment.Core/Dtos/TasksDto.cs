@@ -1,6 +1,6 @@
 ﻿namespace TaskManegment.Core.Dtos;
 
-public class Tasks
+public class TasksDto
 {
     public string Name { get; set; }
     public string Description { get; set; }
