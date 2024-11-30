@@ -16,7 +16,7 @@ public class TasksController : ControllerBase
         return Ok(addedTaskId);
     }
 
-     //GET "api/tasks"
+    //GET "api/tasks"
     [HttpGet]
     public ActionResult<List<TaskResponse>> GetTasks()
     {
@@ -35,13 +35,13 @@ public class TasksController : ControllerBase
     [HttpPatch("{id}/status")]
     public IActionResult StatusTask([FromRoute] Guid id)
     {
-        return NoContent(); 
+        return NoContent();
     }
 
     //DELETE "api/:id"
     [HttpDelete("{id}")]
     public IActionResult DeleteTask([FromRoute] Guid id)
-    {   
+    {
         return NoContent();
     }
 }

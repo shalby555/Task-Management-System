@@ -4,6 +4,6 @@
     {
         Unknow = 0,
         Creator,
-        Exector
+        Performer
     }
 }
